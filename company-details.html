@@ -153,9 +153,9 @@
       // contact information
       document.getElementById("cd_mca_address").innerText = companyData["MCA Address"];
       document.getElementById("cd_address").innerText = companyData["Address"];
-      document.getElementById("cd_phone").innerText = companyData["Phone no"];
-      document.getElementById("cd_mobile").innerText = companyData["mobile No"];
-      document.getElementById("cd_fax").innerText = companyData["Fax no"];
+      document.getElementById("cd_phone").innerText = companyData["Phone no"] || "-";
+      document.getElementById("cd_mobile").innerText = companyData["mobile No"] || "-";
+      document.getElementById("cd_fax").innerText = companyData["Fax no"] || "-";
       document.getElementById("cd_email").innerText = companyData["Email"];
       document.getElementById("cd_website").innerText = companyData["Website"];
 
