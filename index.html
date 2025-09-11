@@ -108,6 +108,9 @@
           const brandName = row["Brand Name"] || companyName;
           const key = companyName.toLowerCase();
 
+          // logging company name for debugging purposes.
+          console.log("Company name:" + companyName); 
+
           // Save in localStorage
           localStorage.setItem(key, JSON.stringify(row));
 
