@@ -146,18 +146,18 @@
       document.getElementById("bi_company_type").innerText = companyData["Company Type"];
       document.getElementById("bi_company_status").innerText = companyData["Company Status"];
       document.getElementById("bi_mca_status").innerText = companyData["MCA Status"];
-      document.getElementById("bi_sc_code").innerText = companyData["SC Code"];
-      document.getElementById("bi_primary_exchange").innerText = companyData["Primary Exchange"];
+      document.getElementById("bi_sc_code").innerText = companyData["SC Code"] || "-";
+      document.getElementById("bi_primary_exchange").innerText = companyData["Primary Exchange"] || "-";
       document.getElementById("bi_industry").innerText = companyData["Sub Industry"];
 
       // contact information
-      document.getElementById("cd_mca_address").innerText = companyData["MCA Address"];
-      document.getElementById("cd_address").innerText = companyData["Address"];
+      document.getElementById("cd_mca_address").innerText = companyData["MCA Address"] || "-";
+      document.getElementById("cd_address").innerText = companyData["Address"] || "-";
       document.getElementById("cd_phone").innerText = companyData["Phone no"] || "-";
       document.getElementById("cd_mobile").innerText = companyData["mobile No"] || "-";
       document.getElementById("cd_fax").innerText = companyData["Fax no"] || "-";
-      document.getElementById("cd_email").innerText = companyData["Email"];
-      document.getElementById("cd_website").innerText = companyData["Website"];
+      document.getElementById("cd_email").innerText = companyData["Email"] || "-";
+      document.getElementById("cd_website").innerText = companyData["Website"] || "-";
 
 
       // business description
